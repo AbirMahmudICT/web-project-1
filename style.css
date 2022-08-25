@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'DynaPuff', cursive;
+}
+.header{
+    background-image: url("images/potf2.jpg");
+    /* repeat ar khatra round dawa jai */
+    background-repeat: no-repeat;
+    /* image folder a akta pic ase cover vs contain ar */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* width 100% dile ata device onujaie responsive hobe abar min-width 100vh o dawa jai*/
+    width: 100%;
+    /* akhane hight 100vh holo viewport height ja device onujai 100% hoi. 200vh dile digun hobe */
+    /* ar height ditai hobe nai background imgage asbes na */
+    min-height: 100vh;  
+}
+nav{
+    /* display flex hole sob akline a chole asbe */
+    display: flex;
+    border: 10px solid red;
+    padding: 3% 5%;
+    /* space between dile je koita content ase akta div ar vitor sobgula justify hoya jabe space niya */
+    justify-content: space-between;
+    align-items: center;
+}
+nav h3{
+    color: rgb(247, 247, 249);
+    text-transform: uppercase;
+    font-size: 23px;
+    border: 5px solid red;
+}
+.nav-menu ul{
+    border: 5px solid red;
+}
+.nav-menu ul li{
+    display: inline-block;
+    margin: 1px 5px;
+    position: relative;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-menu ul li::after{
+    content: '';
+    background-color: black;
+    width: 0px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    
+}
+.nav-menu ul li:hover::after{
+    width: 100%;
+    transition: .5s;
+}
