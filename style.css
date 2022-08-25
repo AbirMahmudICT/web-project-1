@@ -20,7 +20,6 @@
 nav{
     /* display flex hole sob akline a chole asbe */
     display: flex;
-    border: 10px solid red;
     padding: 3% 5%;
     /* space between dile je koita content ase akta div ar vitor sobgula justify hoya jabe space niya */
     justify-content: space-between;
@@ -30,10 +29,6 @@ nav h3{
     color: rgb(247, 247, 249);
     text-transform: uppercase;
     font-size: 23px;
-    border: 5px solid red;
-}
-.nav-menu ul{
-    border: 5px solid red;
 }
 .nav-menu ul li{
     display: inline-block;
